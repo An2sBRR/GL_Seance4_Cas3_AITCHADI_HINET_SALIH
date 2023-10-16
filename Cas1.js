@@ -10,7 +10,7 @@ function Voiture(modele) {
   };
   
   // Fonction pour afficher la liste des options de la voiture
-  Voiture.prototype.AfficherOptions = function () {
+  Voiture.prototype.afficherOptions = function () {
     console.log(`\nOptions pour voiture ${this.modele}: \n`);
     this.options.forEach(option => {
       console.log(option);
@@ -34,7 +34,7 @@ function Voiture(modele) {
   
   const PrototypePackSportif = {
     ajouterOptionsPourSportif: function () {
-      this.ajouterOption('Suspension spécifique');
+      this.ajouterOption('Suspensions spécifiques');
       this.ajouterOption('Jantes spécifiques');
     }
   };
@@ -62,10 +62,10 @@ function Voiture(modele) {
     Voiture4.ajouterOption('Toit ouvrant'); // Ajout de la nouvelle option en plus du pack sportif
   
     // Affichage des options de chaque voiture
-    Voiture1.AfficherOptions();
-    Voiture2.AfficherOptions();
-    Voiture3.AfficherOptions();
-    Voiture4.AfficherOptions();
+    Voiture1.afficherOptions();
+    Voiture2.afficherOptions();
+    Voiture3.afficherOptions();
+    Voiture4.afficherOptions();
   }
  
 
