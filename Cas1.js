@@ -45,7 +45,7 @@ function Voiture(modele) {
     const Voiture1 = new Voiture('Standard');
     const Voiture2 = new Voiture('Familiale');
     const Voiture3 = new Voiture('Sportive');
-    const Voiture4 = new Voiture('Familiale décapotable');
+    const Voiture4 = new Voiture('Sportive décapotable');
   
     // Utilisation des objets prototypes pour ajouter des options aux voitures
     Object.assign(Voiture1, PrototypePackStandard);
